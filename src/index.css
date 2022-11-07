@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *:focus-visible {
+    @apply outline-none;
+  }
+
+  body {
+    @apply bg-light-grey;
+    @apply font-sans font-normal text-sm leading-normal tracking-normal text-black;
+  }
+
+  h2 {
+    @apply font-bold text-2xl;
+  }
+}
